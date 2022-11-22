@@ -7,7 +7,7 @@
   * @parameter: number of arguments
   * Return: the number of characters
   */
-int characters(va_list parameter)
+int character(va_list parameter)
 {
 	int x;
 

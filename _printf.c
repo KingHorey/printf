@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stadarg.h>
 /**
   * _printf - printf function
   * @format: list of argument types passed to the function
@@ -29,11 +28,11 @@ int _printf(const char *format, ...)
 				num_character += string_character(parameter);
 				gen_counter++;
 			}
-			else if (format[gen_counter + 1] = '%')
+			else if (format[gen_counter + 1] == '%')
 			{
-				putchar('%');
+				_putchar('%');
 				gen_counter++;
-				num_chatacter++;
+				num_character++;
 			}
 
 		}
@@ -43,9 +42,9 @@ int _printf(const char *format, ...)
 			_putchar(format[gen_counter]);
 			num_character++;
 		}
-
+	}
 		va_end(parameter);
-
 		return (num_character);
 }
+
 
