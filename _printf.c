@@ -28,6 +28,12 @@ int _printf(const char *format, ...)
 				num_character += string_character(parameter);
 				gen_counter++;
 			}
+			else if (format[gen_counter + 1] = '%')
+			{
+				putchar('%');
+				gen_counter++;
+				num_chatacter++;
+			}
 
 		}
 
